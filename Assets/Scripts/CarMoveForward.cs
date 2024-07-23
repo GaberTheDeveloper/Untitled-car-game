@@ -60,26 +60,13 @@ public class CarMoveForward : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            shiftHeld = true;  //maybe
-            Debug.Log("ShiftDown");
-
             if (speedAcceleration < 1.5)
             {
                 speedAcceleration += 0.01f;
                 turnAcelleration += 0.01f;
             }
         }
-
-
-
-        if (Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            shiftHeld = false; //maybe
-            Debug.Log("Shiftup");
-
-        }
-
-        if (shiftHeld == false)
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             if (speedAcceleration > 0)
             {
@@ -90,7 +77,6 @@ public class CarMoveForward : MonoBehaviour
             {
                 speedAcceleration = 0;
                 turnAcelleration = 0;
-                Debug.Log("speed is lowest");
             }
         }
 

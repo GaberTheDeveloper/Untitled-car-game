@@ -254,6 +254,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1614896161}
     m_Modifications:
+    - target: {fileID: 5794975234173693594, guid: ea4b8c63dcf8a0e4b9189477421b407f, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6279963021222928815, guid: ea4b8c63dcf8a0e4b9189477421b407f, type: 3}
       propertyPath: m_Name
       value: desertfloor (1)
@@ -5799,7 +5803,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f0f45766d2a73844db6475e4e6b40948, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.03
+      value: 3.64
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f0f45766d2a73844db6475e4e6b40948, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5846,23 +5850,18 @@ PrefabInstance:
       addedObject: {fileID: 1962146395}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f0f45766d2a73844db6475e4e6b40948, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1962146398}
+      addedObject: {fileID: 1962146399}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f0f45766d2a73844db6475e4e6b40948, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1962146399}
+      addedObject: {fileID: 1962146401}
   m_SourcePrefab: {fileID: 100100000, guid: f0f45766d2a73844db6475e4e6b40948, type: 3}
---- !u!1 &1962146394 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f0f45766d2a73844db6475e4e6b40948, type: 3}
-  m_PrefabInstance: {fileID: 1962146393}
-  m_PrefabAsset: {fileID: 0}
 --- !u!65 &1962146395
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1962146394}
+  m_GameObject: {fileID: 919132147761989384}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -5877,32 +5876,13 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 6.12069, y: 4.853388, z: 8.5781}
   m_Center: {x: 2.5603454, y: 1.9266939, z: -3.1787803}
---- !u!114 &1962146398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1962146394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cf1b19f745e0a845a1c51f521d3021a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shiftHeld: 1
-  carSpeedNormal: 15
-  speedAcceleration: 0
-  turnAcelleration: 0
-  turnSpeed: 1
-  carTurn1: 0.3
-  carTurn2: -0.3
 --- !u!54 &1962146399
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1962146394}
+  m_GameObject: {fileID: 919132147761989384}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -5923,6 +5903,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &1962146401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147761989384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb16b86a2bf06a14ab0901dcd3736318, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 60
+  acceleration: 0.1
+  friction: 0.98
+  maxRotation: 10
+  turnSpeed: 14
+  boostMultiplier: 1.8
+  boostDuration: 2
+  boostCooldown: 5
 --- !u!1001 &1962846656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6366,6 +6366,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6660042872431360789, guid: ea4b8c63dcf8a0e4b9189477421b407f, type: 3}
   m_PrefabInstance: {fileID: 2117824661}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &919132147761989384 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f0f45766d2a73844db6475e4e6b40948, type: 3}
+  m_PrefabInstance: {fileID: 1962146393}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1975934105470156047
 PrefabInstance:
